@@ -1,6 +1,7 @@
 import Lake
 open Lake DSL
 
-package Dirs {
-  -- add configuration options here
-}
+package dirs
+
+@[defaultTarget]
+lean_lib Dirs
