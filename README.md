@@ -1,6 +1,6 @@
 # Dirs.lean
 
-Retrieve platform-specific directories in Lean 4, ported from Rust's [`dirs`](https://github.com/dirs-dev/dirs-rs.
+Retrieve platform-specific directories in Lean 4, ported from Rust's [`dirs`](https://github.com/dirs-dev/dirs-rs).
 
 Currently, only Linux and MacOS is supported:
 
@@ -9,12 +9,12 @@ Currently, only Linux and MacOS is supported:
 | `home_dir` | `some $HOME` | `some $HOME` |
 | `cache_dir` | `some $XDG_CACHE_HOME` or `some $HOME/".cache"` | `some $HOME/"Library"/"Caches"` |
 | `config_dir` | `some $XDG_CONFIG_HOME` or `some $HOME/".config"` | `some $HOME/"Library"/"Application Support"` |
-| `data_dir` | `some $XDG_DATA_HOME` or `some $HOME/".local"/"share"` | `some $HOME`/"Library"/"Application Support"` |
+| `data_dir` | `some $XDG_DATA_HOME` or `some $HOME/".local"/"share"` | `some $HOME/"Library"/"Application Support"` |
 | `data_local_dir` | `some $XDG_DATA_HOME` or `some $HOME/".local"/"share"` | `some $HOME/"Library"/"Application Support"` |
 | `executable_dir` | `some $XDG_BIN_HOME` or `some $HOME/".local"/"bin"` | `none` |
 | `preference_dir` | `some $XDG_CONFIG_HOME` or `some $HOME/".config"` |  `some $HOME/"Library"/"Preferences"` |
 | `runtime_dir` | `some $XDG_RUNTIME_DIR` or `none` | `none` |
-| `state_dir` | `some $XDG_STATE_HOME` or `some $HOME`/".local"/"state"` | `none` |
+| `state_dir` | `some $XDG_STATE_HOME` or `some $HOME/".local"/"state"` | `none` |
 | `audio_dir` | `some XDG_MUSIC_DIR` or `none` | `some $HOME/"Music"` |
 | `desktop_dir` | `some XDG_DESKTOP_DIR` or `none` | `some $HOME/"Desktop"` |
 | `document_dir` | `some XDG_DOCUMENTS_DIR` or `none` | `some $HOME/"Documents"` |
